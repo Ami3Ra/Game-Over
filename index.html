@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game over Side">
+    <meta name="keywords" content="Game Over , موقع العاب">
+    <meta name="author" content="Amira Amr">
+    <title>LogIn</title>
+    <!--? ========   fontAwesome   ======== -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--? ========   bootstrap css  ======== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--? ========   css style file   ======== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ========== start fixed  ========= -->
+     <!-- fa-moon fa-sun -->
+    <span class="position-fixed bottom-0 end-0 m-4">
+        <i role="button"  id="mood" class="fa-regular fa-sun fa-xl"></i>
+    </span>
+    <!-- ========== end fixed  ========= -->
+    <!-- ========== start login  ========= -->
+    <main class="container login min-vh-100 hstack">
+        <section class="overflow-hidden  w-100 rounded login-aria shadow">
+            <div class="row g-0">
+                <div class="col-lg-5 d-none d-md-block">
+                    <div class="image"></div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="p-4">
+                        <header class="text-center">
+                            <img src="images/logo-sm.png" alt="logo game over">
+                            <h1>logIn to Game Over</h1>
+                        </header>
+                        <form class="row my-4 g-3" id="logIn">
+                            
+                          
+                            <div class="col-md-12">
+                                <div class="form-data">
+                                    <input type="email" id="email" class="form-control" placeholder="Email Address">
+                                <ul class="alert alert-danger invalid-feedback p-0">
+                                    <li>Email Is Required</li>
+                                    <li>InValid Email Formate</li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-data">
+                                    <input type="password" id="password" class="form-control" placeholder="Password">
+                                <ul class="alert alert-danger invalid-feedback p-0">
+                                    <li>Password Is Required</li>
+                                    <li>Minimum eight characters, at least one letter and one number</li>
+                                </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                               <button type="submit" class="w-100 btn main-btn" id="btnLogIn">logIn</button>
+                               <p id="msg" class="text-center"></p>
+                            </div>
+                        </form>
+                        <footer>
+                            <p class="text-center small">Not a member Yet?
+                                <a href="./register.html" class="text-decoration-none link-secondary">Creat Account
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <!-- ========== end login  ========= -->
+
+
+
+
+
+    <!--! ========   bootstrap js  ======== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+     <!--! ========   js file ======== -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
