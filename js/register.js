@@ -6,7 +6,7 @@ let mode = document.getElementById("mood");
 let isValid = false;
 
 // ! ============>     WHEN START      ===============>
-    getGames('mmorpg');
+    // getGames('mmorpg');
 
 if(localStorage.getItem("theme") !=null){
    const themeData = localStorage.getItem("theme");
@@ -96,7 +96,7 @@ if(localStorage.getItem("theme") !=null){
             return true;
         }else{  // data error
             input.classList.add('is-invalid')
-            input.classList.remove('is valid')
+            input.classList.remove('is-valid')
             return false;
         }
   
@@ -112,7 +112,7 @@ if(localStorage.getItem("theme") !=null){
             return true;
         }else{  // data error
             inputs[2].classList.add('is-invalid')
-            inputs[2].classList.remove('is valid')
+            inputs[2].classList.remove('is-valid')
             return false;
         }
   
@@ -129,7 +129,7 @@ if(localStorage.getItem("theme") !=null){
             return true;
         }else{  // data error
             inputs[3].classList.add('is-invalid')
-            inputs[3].classList.remove('is valid')
+            inputs[3].classList.remove('is-valid')
             return false;
         }
   
@@ -147,9 +147,10 @@ if(localStorage.getItem("theme") !=null){
              return true;
          }else{  // data error
              inputs[4].classList.add('is-invalid')
-             inputs[4].classList.remove('is valid')
+             inputs[4].classList.remove('is-valid')
              return false;
          }
    
      }
+    
     
